@@ -4,21 +4,7 @@
 #  IMESB — Introdução à Agronomia
 #  Profa. Ma. Mariana Dias Meneses
 # =============================================================================
-#
-#  COMO RODAR:
-#  1. Instale as dependências:
-#       pip install streamlit plotly pandas
-#
-#  2. Execute o app:
-#       streamlit run simulador_climatico.py
-#
-#  3. O navegador abrirá automaticamente em http://localhost:8501
-#
-#  PARA COMPARTILHAR COM OS ALUNOS (veja README ao final do arquivo):
-#  - Opção A: Streamlit Community Cloud (gratuito, link público)
-#  - Opção B: ngrok (link temporário, sem cadastro)
-#  - Opção C: Google Colab (sem instalar nada)
-# =============================================================================
+
 
 import streamlit as st
 import plotly.graph_objects as go
@@ -470,22 +456,25 @@ fig_bar = go.Figure(go.Bar(
 ))
 
 fig_bar.update_layout(
-    height=240,
-    margin=dict(l=10, r=60, t=10, b=10),
+    height=260,
+    margin=dict(l=10, r=70, t=10, b=40),
     xaxis=dict(
         range=[0, 105],
         showgrid=True,
-        gridcolor="#eee",
+        gridcolor="#e0e0e0",
         ticksuffix="%",
-        title="Perda estimada de produtividade",
-        title_font_size=12,
+        tickfont=dict(size=14, color="#333333"),
+        title="Perda estimada de produtividade (%)",
+        title_font=dict(size=14, color="#333333"),
     ),
-    yaxis=dict(autorange="reversed"),
+    yaxis=dict(
+        autorange="reversed",
+        tickfont=dict(size=15, color="#1A5C2A", family="Arial"),
+    ),
     plot_bgcolor="white",
-    paper_bgcolor="rgba(0,0,0,0)",
-    font=dict(size=13),
+    paper_bgcolor="white",
+    font=dict(size=14, color="#333333", family="Arial"),
 )
-
 st.plotly_chart(fig_bar, use_container_width=True)
 
 # ─── Análise da cultura selecionada ───────────────────────────────────────────
