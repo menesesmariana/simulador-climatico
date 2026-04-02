@@ -93,11 +93,8 @@ Os coeficientes de impacto e os limiares críticos por cultura são baseados em:
 
 ## 🎓 Contexto pedagógico
 
-Este simulador foi desenvolvido como parte de um conjunto de materiais complementares para a Aula 05, que inclui:
+Este simulador foi desenvolvido como parte de um conjunto de materiais complementares para aula
 
-- 📄 Material complementar em Word (dados SEEG 2024, COP30, estudos de ciência de dados)
-- 📊 Apresentação de slides com 11 telas temáticas
-- 📋 Roteiro de estudo e preparação docente
 - 💻 Este aplicativo interativo em Python
 
 ### Objetivos de aprendizagem
@@ -112,21 +109,7 @@ Ao interagir com o simulador, o estudante deve ser capaz de:
 
 ---
 
-## 💡 Sugestões de uso em sala
 
-**Atividade 1 — Exploração livre (10 min)**
-Cada aluno acessa o app e ajusta os controles para simular o cenário climático da região onde mora ou trabalha.
-
-**Atividade 2 — Debate guiado**
-A professora projeta o app e propõe cenários específicos para a turma discutir:
-- *"O que acontece com o café se a temperatura subir 4 °C?"*
-- *"Qual cultura é mais resiliente à seca?"*
-- *"Como o CO₂ elevado pode compensar parcialmente as perdas?"*
-
-**Atividade 3 — Conexão com ciência de dados**
-Mostrar o código-fonte lado a lado com o app funcionando, explicando como algoritmos como Random Forest e XGBoost fazem previsões semelhantes com dados reais.
-
----
 
 ## 🔄 Como atualizar o app
 
