@@ -140,9 +140,9 @@ Se precisar modificar o simulador (adicionar uma cultura, ajustar coeficientes, 
 
 ## 📬 Contato
 
-**Profa. Dra. Laura Matos Ribera**  
-IMESB — Instituto Municipal de Ensino Superior de Bebedouro  
-📧 lauramribera@imesb.br
+**Profa. Ma. Mariana Dias Meneses**  
+ 
+📧 menesesmarianadias@gmail.com
 
 ---
 
