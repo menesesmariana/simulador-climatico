@@ -48,7 +48,7 @@ O navegador abrirá automaticamente em `http://localhost:8501`.
 
 O app está publicado no Streamlit Community Cloud e pode ser acessado diretamente pelo navegador, sem instalar nada:
 
-**🔗 [simulador-climatico-imesb.streamlit.app](https://simulador-climatico-imesb.streamlit.app)**
+**🔗 [simulador-climatico-imesb.streamlit.app](https://friw4qr893z3qncqg6b4nn.streamlit.app/)**
 
 Funciona em celular, tablet e computador.
 
