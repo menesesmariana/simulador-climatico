@@ -1,6 +1,6 @@
 # =============================================================================
 #  Simulador de Impacto Climático na Produção Agrícola
-#  Mudanças Climáticas e o Agronegócio
+#  Aula 05 — Mudanças Climáticas e o Agronegócio
 #  IMESB — Introdução à Agronomia
 #  Profa. Ma. Mariana Dias Meneses
 # =============================================================================
@@ -342,7 +342,7 @@ with st.sidebar:
     st.markdown("### Simulador Climático Agrícola")
     st.markdown(
         "**IMESB · Introdução à Agronomia**  \n"
-        "Aula 05 — Mudanças Climáticas"
+        "Profa. Ma. Mariana Dias Meneses"
     )
     st.divider()
 
@@ -402,7 +402,7 @@ emis_add = emissoes_adicionais(temp, eventos)
 st.markdown(
     '<div class="main-title">🌍 Simulador de Impacto Climático na Produção Agrícola</div>'
     '<div class="subtitle">Aula 05 — Mudanças Climáticas e o Agronegócio · IMESB · '
-    'Profa. Dra. Laura Matos Ribera</div>',
+    'Profa. Ma. Mariana Dias Meneses</div>',
     unsafe_allow_html=True
 )
 
@@ -470,24 +470,20 @@ fig_bar = go.Figure(go.Bar(
 ))
 
 fig_bar.update_layout(
-    height=260,
-    margin=dict(l=10, r=70, t=10, b=40),
+    height=240,
+    margin=dict(l=10, r=60, t=10, b=10),
     xaxis=dict(
         range=[0, 105],
         showgrid=True,
-        gridcolor="#e0e0e0",
+        gridcolor="#eee",
         ticksuffix="%",
-        tickfont=dict(size=14, color="#333333"),
-        title="Perda estimada de produtividade (%)",
-        title_font=dict(size=14, color="#333333"),
+        title="Perda estimada de produtividade",
+        title_font_size=12,
     ),
-    yaxis=dict(
-        autorange="reversed",
-        tickfont=dict(size=15, color="#1A5C2A", family="Arial"),
-    ),
+    yaxis=dict(autorange="reversed"),
     plot_bgcolor="white",
-    paper_bgcolor="white",
-    font=dict(size=14, color="#333333", family="Arial"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    font=dict(size=13),
 )
 
 st.plotly_chart(fig_bar, use_container_width=True)
@@ -670,4 +666,40 @@ st.markdown(
 #     https://seunome-simulador-climatico.streamlit.app
 #  5. Compartilhe o link com os alunos via WhatsApp, Moodle ou e-mail
 #  Tempo estimado: 10–15 minutos na primeira vez
-
+#
+#  OPÇÃO B — ngrok (link temporário, sem repositório, mais rápido)
+#  ----------------------------------------------------------------
+#  1. Instale ngrok: https://ngrok.com/download (gratuito)
+#  2. Execute o Streamlit normalmente:
+#       streamlit run simulador_climatico.py
+#  3. Em outro terminal, execute:
+#       ngrok http 8501
+#  4. O ngrok gera um link público temporário tipo:
+#     https://abc123.ngrok.io
+#  5. Compartilhe com os alunos — válido enquanto o terminal estiver aberto
+#  Ideal para: uso em sala de aula, sem precisar de repositório
+#
+#  OPÇÃO C — Google Colab (sem instalar nada, roda no navegador)
+#  -------------------------------------------------------------
+#  1. Acesse: https://colab.research.google.com
+#  2. Crie um novo notebook e cole estas células:
+#
+#     Célula 1:
+#       !pip install streamlit pyngrok plotly -q
+#
+#     Célula 2:
+#       %%writefile simulador.py
+#       [cole aqui todo o conteúdo deste arquivo]
+#
+#     Célula 3:
+#       from pyngrok import ngrok
+#       import subprocess
+#       proc = subprocess.Popen(['streamlit', 'run', 'simulador.py',
+#                                '--server.port', '8501'])
+#       tunnel = ngrok.connect(8501)
+#       print("Acesse o app em:", tunnel.public_url)
+#
+#  3. Compartilhe o link gerado com os alunos
+#  Ideal para: demonstração rápida sem qualquer instalação
+#
+# =============================================================================
