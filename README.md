@@ -1,8 +1,8 @@
 # 🌱 Simulador de Impacto Climático na Produção Agrícola
 
-Aplicativo interativo desenvolvido como material didático complementar para a **Aula 05 — Mudanças Climáticas e o Agronegócio**, do curso de Engenharia Agronômica do **IMESB — Instituto Municipal de Ensino Superior de Bebedouro "Victório Cardassi"**.
+Aplicativo interativo desenvolvido como material didático complementar para a ** Mudanças Climáticas e o Agronegócio**, do curso de Engenharia Agronômica do **IMESB — Instituto Municipal de Ensino Superior de Bebedouro "Victório Cardassi"**.
 
-> **Profa. Dra. Laura Matos Ribera** · Introdução à Agronomia
+> **Profa. Ma. Mariana Dias Meneses** · Introdução à Agronomia
 
 ---
 
