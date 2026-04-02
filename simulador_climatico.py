@@ -1,6 +1,6 @@
 # =============================================================================
 #  Simulador de Impacto Climático na Produção Agrícola
-#  Aula 05 — Mudanças Climáticas e o Agronegócio
+#  Mudanças Climáticas e o Agronegócio
 #  IMESB — Introdução à Agronomia
 #  Profa. Ma. Mariana Dias Meneses
 # =============================================================================
